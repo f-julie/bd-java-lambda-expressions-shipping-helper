@@ -30,6 +30,8 @@ public class ShippingHelper {
         // TODO Use list's removeIf method to remove orders larger than one item. Use a lambda expression to implement
         //  the predicate interface. Use the removeIf method on the list called orders, a copy of the argument
         //  orderList.
+        orders.removeIf(order -> order.size() > 1);
+
         return orders;
     }
 }
